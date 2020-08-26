@@ -24,8 +24,5 @@ jobs:
       with:
         repositories: '[{ "id": "oss.sonatype.org-snapshot", "name": "central-snapshot", "url": "https://oss.sonatype.org/content/repositories/snapshots", "release": {"enable": "true"}, "snapshot": {"enable": "true"} }]'
     
-    - name: cat settings
-      run: cat ~/.m2/settings.xml
-     
     - name: Install app            
       run: mvn -U clean install 
