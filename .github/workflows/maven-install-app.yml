@@ -23,6 +23,6 @@ jobs:
       uses: whelk-io/maven-settings-xml-action@v11
       with:
         repositories: '[{ "id": "oss.sonatype.org-snapshot", "name": "central-snapshot", "url": "https://oss.sonatype.org/content/repositories/snapshots", "release": {"enable": "true"}, "snapshot": {"enable": "true"} }]'
-        
+    
     - name: Install app            
       run: mvn -U clean install 
