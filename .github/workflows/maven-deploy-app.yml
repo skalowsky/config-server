@@ -34,5 +34,5 @@ jobs:
         heroku_email: ${{ secrets.HEROKU_EMAIL }}
         branch: master
       env:
-        HD_MAVEN_SETTINGS_URL: "https://github.com/skalowsky/maven-settings/blob/master/snapshot-settings.xml"
+        HD_MAVEN_SETTINGS_URL: "https://raw.githubusercontent.com/skalowsky/maven-settings/master/snapshot-settings.xml"
         HD_GIT_URL: "https://github.com/skalowsky/config-repo.git"        
