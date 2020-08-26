@@ -1,0 +1,40 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+          <id>oss.sonatype.org-snapshot</id>
+          <name>central-snapshot</name>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+          <release>
+            <enable>true</enable>
+          </release>
+          <snapshot>
+            <enable>true</enable>
+          </snapshot>
+        </repository>
+      </repositories>
+      <pluginRepositories/>
+    </profile>
+  </profiles>
+  <servers/>
+  <mirrors/>
+</settings>        

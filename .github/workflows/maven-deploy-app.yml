@@ -33,3 +33,6 @@ jobs:
         heroku_app_name: "skalowsky-config-server"
         heroku_email: ${{ secrets.HEROKU_EMAIL }}
         branch: master
+        env:
+          MAVEN_SETTINGS_PATH: "support/snapshot-settings.xml"
+          GIT_URL: "https://github.com/skalowsky/config-repo.git"        
