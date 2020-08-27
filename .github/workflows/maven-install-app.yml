@@ -22,7 +22,7 @@ jobs:
     - name: Set up .m2/settings.xml action
       uses: whelk-io/maven-settings-xml-action@v11
       with:
-        repositories: '[{ "id": "oss.sonatype.org-snapshot", "name": "central-snapshot", "url": "https://oss.sonatype.org/content/repositories/snapshots", "release": {"enable": "true"}, "snapshot": {"enable": "true"} }]'
+        repositories: '[{ "id": "oss.sonatype.org-snapshot", "name": "central-snapshot", "url": "https://oss.sonatype.org/content/repositories/snapshots", "snapshot": {"enable": "true"} }]'
     
     - name: Install app            
       run: mvn -U clean install 
