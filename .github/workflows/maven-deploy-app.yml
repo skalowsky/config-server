@@ -36,5 +36,5 @@ jobs:
       env:
         HD_MAVEN_SETTINGS_PATH: ""
         HD_MAVEN_SETTINGS_URL: "https://raw.githubusercontent.com/skalowsky/maven-settings/master/snapshot-settings.xml"
-        HD_GIT_URL: "https://github.com/skalowsky/config-repo.git"        
+        HD_GIT_URL: ${{ secrets.GIT_URL }}        
         HD_CONFIG_SERVER_SECRET: ${{ secrets.CONFIG_SERVER_SECRET }}
